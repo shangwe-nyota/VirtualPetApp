@@ -9,10 +9,10 @@
 class Pet {
     
     //Data
-    var happinessLevel:Double
-    var foodLevel:Double
-    var numberOfTimesFed:Int
-    var numberOfTimesPlayed:Int
+    private (set) var happinessLevel:Double
+    private (set) var foodLevel:Double
+    private (set) var numberOfTimesFed:Int
+    private (set) var numberOfTimesPlayed:Int
     var typeOfPet:PetOptions?
     
     enum PetOptions {
@@ -34,6 +34,7 @@ class Pet {
     //When a user clicks the feed pet button this function is called and then the update screen
     func feedPet() {
         if (self.foodLevel < 10) {
+            print(self.foodLevel)
             self.foodLevel += 1
             self.numberOfTimesFed += 1
         }
