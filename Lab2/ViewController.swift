@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import AVFoundation
+
 
 class ViewController: UIViewController {
     
@@ -15,6 +17,10 @@ class ViewController: UIViewController {
     var birdSelected = Pet(petType: .bird)
     var bunnySelected = Pet(petType: .bunny)
     var fishSelected = Pet(petType: .fish)
+    
+    //Adding Animal Audio as Creative Portion https://developer.apple.com/documentation/avfoundation/
+    var audioPlayer: AVAudioPlayer?
+
 
     @IBOutlet weak var mainBackgroundColor: UIView!
     
@@ -58,6 +64,7 @@ class ViewController: UIViewController {
         currentPet = dogSelected//Defaultpet object is initialized to dog
         
         updateDisplay()
+        
         
     }
 //    petDisplau.image = UIImage(named: "cat@2x.png")
@@ -113,6 +120,24 @@ class ViewController: UIViewController {
         let foodLevelValue = Double((currentPet?.foodLevel)!)/10
         foodLevelBar.animateValue(to: CGFloat(foodLevelValue))
     }
+    
+    func playSound(fileName: String, fileExtension: String) {
+        // Define the path for the sound file in the 'sounds' folder
+        if let soundURL = Bundle.main.url(forResource: fileName, withExtension: fileExtension) {
+            do {
+                // Initialize the audio player with the sound file URL
+                audioPlayer = try AVAudioPlayer(contentsOf: soundURL)
+                audioPlayer?.prepareToPlay() // Prepares the player for playback
+                audioPlayer?.play() // Plays the sound
+            } catch {
+                // Handle the error
+                print("Error: Could not find and play the sound file named \(fileName).")
+            }
+        } else {
+            print("Error: File \(fileName).mp3 not found.")
+        }
+    }
+
 
     
     //Actions for play and Feed Buttons
@@ -133,26 +158,32 @@ class ViewController: UIViewController {
     @IBAction func dogButtonPressed(_ sender: Any) {
         print("Dog Button Pressed")
         currentPet = dogSelected
+        playSound(fileName: "DogBark", fileExtension: "mp3")
         updateDisplay()
     }
     @IBAction func catButtonPressed(_ sender: Any) {
         print("Cat Button Pressed")
         currentPet = catSelected
+        playSound(fileName: "CatMeow", fileExtension: "wav")
+
         updateDisplay()
     }
     @IBAction func birdButtonPressed(_ sender: Any) {
         print("Bird Button Pressed")
         currentPet = birdSelected
+        playSound(fileName: "BirdChirping", fileExtension: "mp3")
         updateDisplay()
     }
     @IBAction func bunnyButtonPressed(_ sender: Any) {
         print("BunnyButton Pressed")
         currentPet = bunnySelected
+        playSound(fileName: "RabbitNoise", fileExtension: "mp3")
         updateDisplay()
     }
     @IBAction func fishButtonPressed(_ sender: Any) {
         print("Fish Button pressed")
         currentPet = fishSelected
+        playSound(fileName: "FishWater", fileExtension: "wav")
         updateDisplay()
     }
     

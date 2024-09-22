@@ -15,6 +15,11 @@
 		C4018D9D2C9E27D800DB28D2 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C4018D9C2C9E27D800DB28D2 /* Base */; };
 		C4018DA52C9F93F000DB28D2 /* DisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4018DA42C9F93F000DB28D2 /* DisplayView.swift */; };
 		C4018DA72C9F9DF400DB28D2 /* pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4018DA62C9F9DF400DB28D2 /* pet.swift */; };
+		C4018DBE2C9FF1F800DB28D2 /* BirdChirping.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C4018DBD2C9FF1F800DB28D2 /* BirdChirping.mp3 */; };
+		C4018DC02C9FF6A000DB28D2 /* DogBark.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C4018DBF2C9FF6A000DB28D2 /* DogBark.mp3 */; };
+		C4018DC22C9FF70F00DB28D2 /* CatMeow.wav in Resources */ = {isa = PBXBuildFile; fileRef = C4018DC12C9FF70F00DB28D2 /* CatMeow.wav */; };
+		C4018DC42C9FF8FF00DB28D2 /* RabbitNoise.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C4018DC32C9FF8FF00DB28D2 /* RabbitNoise.mp3 */; };
+		C4018DC62C9FF95000DB28D2 /* FishWater.wav in Resources */ = {isa = PBXBuildFile; fileRef = C4018DC52C9FF95000DB28D2 /* FishWater.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		C4018D9E2C9E27D800DB28D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4018DA42C9F93F000DB28D2 /* DisplayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayView.swift; sourceTree = "<group>"; };
 		C4018DA62C9F9DF400DB28D2 /* pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pet.swift; sourceTree = "<group>"; };
+		C4018DBD2C9FF1F800DB28D2 /* BirdChirping.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BirdChirping.mp3; sourceTree = "<group>"; };
+		C4018DBF2C9FF6A000DB28D2 /* DogBark.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = DogBark.mp3; sourceTree = "<group>"; };
+		C4018DC12C9FF70F00DB28D2 /* CatMeow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = CatMeow.wav; sourceTree = "<group>"; };
+		C4018DC32C9FF8FF00DB28D2 /* RabbitNoise.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = RabbitNoise.mp3; sourceTree = "<group>"; };
+		C4018DC52C9FF95000DB28D2 /* FishWater.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = FishWater.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +71,7 @@
 		C4018D8F2C9E27D700DB28D2 /* Lab2 */ = {
 			isa = PBXGroup;
 			children = (
+				C4018DB22C9FF18200DB28D2 /* sounds */,
 				C4018D902C9E27D700DB28D2 /* AppDelegate.swift */,
 				C4018D922C9E27D700DB28D2 /* SceneDelegate.swift */,
 				C4018D942C9E27D700DB28D2 /* ViewController.swift */,
@@ -71,6 +82,18 @@
 				C4018D9E2C9E27D800DB28D2 /* Info.plist */,
 			);
 			path = Lab2;
+			sourceTree = "<group>";
+		};
+		C4018DB22C9FF18200DB28D2 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				C4018DBF2C9FF6A000DB28D2 /* DogBark.mp3 */,
+				C4018DBD2C9FF1F800DB28D2 /* BirdChirping.mp3 */,
+				C4018DC32C9FF8FF00DB28D2 /* RabbitNoise.mp3 */,
+				C4018DC12C9FF70F00DB28D2 /* CatMeow.wav */,
+				C4018DC52C9FF95000DB28D2 /* FishWater.wav */,
+			);
+			path = sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,8 +155,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4018D9A2C9E27D800DB28D2 /* Assets.xcassets in Resources */,
+				C4018DC62C9FF95000DB28D2 /* FishWater.wav in Resources */,
+				C4018DC22C9FF70F00DB28D2 /* CatMeow.wav in Resources */,
+				C4018DBE2C9FF1F800DB28D2 /* BirdChirping.mp3 in Resources */,
+				C4018DC42C9FF8FF00DB28D2 /* RabbitNoise.mp3 in Resources */,
 				C4018D9D2C9E27D800DB28D2 /* Base in Resources */,
 				C4018D982C9E27D700DB28D2 /* Base in Resources */,
+				C4018DC02C9FF6A000DB28D2 /* DogBark.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
