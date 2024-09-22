@@ -119,6 +119,14 @@ class ViewController: UIViewController {
         hapinessLevelBar.animateValue(to: CGFloat(happinessLevelValue))
         let foodLevelValue = Double((currentPet?.foodLevel)!)/10
         foodLevelBar.animateValue(to: CGFloat(foodLevelValue))
+        
+        //Initially no rotation on image
+        if happinessLevelValue >= 1.0 {
+            startImageRotation()
+        } else {
+            stopImageRotation()
+        }
+
     }
     
     func playSound(fileName: String, fileExtension: String) {
@@ -187,6 +195,26 @@ class ViewController: UIViewController {
         updateDisplay()
     }
     
+    
+    
+    // Function to start the rotation animation
+    func startImageRotation(duration: CFTimeInterval = 1.0) {
+        // Check if the animation is not already added
+        if petImageView.layer.animation(forKey: "rotationAnimation") == nil {
+            let rotation = CABasicAnimation(keyPath: "transform.rotation")
+            rotation.fromValue = 0.0
+            rotation.toValue = CGFloat.pi * 2
+            rotation.duration = duration
+            rotation.repeatCount = .infinity
+            petImageView.layer.add(rotation, forKey: "rotationAnimation")
+        }
+    }
+    
+    // Function to stop the rotation animation
+    func stopImageRotation() {
+        petImageView.layer.removeAnimation(forKey: "rotationAnimation")
+    }
+
     
 
 }
