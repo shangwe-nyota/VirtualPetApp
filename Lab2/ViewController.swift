@@ -72,34 +72,34 @@ class ViewController: UIViewController {
         fedTextField.text = "Fed: \((currentPet?.numberOfTimesFed)!)"
         
         //Update the background Image
-        //Unwrap the currentPet object and switch through each case
+        //Unwrap the currentPet object and switch through each case only if the new image/color is found in the assests library
         if let selectedPet = currentPet {
             switch selectedPet.typeOfPet {
             case .dog:
-                petImageView.image = UIImage(named: "dog")
-                hapinessLevelBar.color = UIColor(named: "dogTheme")!
-                foodLevelBar.color = UIColor(named: "dogTheme")!
-                mainBackgroundColor.backgroundColor = UIColor(named: "dogTheme")!
+                petImageView.image = UIImage(named: "dog")  ?? petImageView.image
+                hapinessLevelBar.color = UIColor(named: "dogTheme") ?? hapinessLevelBar.color
+                foodLevelBar.color = UIColor(named: "dogTheme") ?? foodLevelBar.color
+                mainBackgroundColor.backgroundColor = UIColor(named: "dogTheme") ?? mainBackgroundColor.backgroundColor
             case .bird:
-                petImageView.image = UIImage(named: "bird")
-                hapinessLevelBar.color = UIColor(named: "birdTheme")!
-                foodLevelBar.color = UIColor(named: "birdTheme")!
-                mainBackgroundColor.backgroundColor = UIColor(named: "birdTheme")!
+                petImageView.image = UIImage(named: "bird") ?? petImageView.image
+                hapinessLevelBar.color = UIColor(named: "birdTheme") ?? hapinessLevelBar.color
+                foodLevelBar.color = UIColor(named: "birdTheme") ?? foodLevelBar.color
+                mainBackgroundColor.backgroundColor = UIColor(named: "birdTheme") ?? mainBackgroundColor.backgroundColor
             case .bunny:
-                petImageView.image = UIImage(named: "bunny")
-                hapinessLevelBar.color = UIColor(named: "bunnyTheme")!
-                foodLevelBar.color = UIColor(named: "bunnyTheme")!
-                mainBackgroundColor.backgroundColor = UIColor(named: "bunnyTheme")!
+                petImageView.image = UIImage(named: "bunny") ?? petImageView.image
+                hapinessLevelBar.color = UIColor(named: "bunnyTheme") ?? hapinessLevelBar.color
+                foodLevelBar.color = UIColor(named: "bunnyTheme") ?? foodLevelBar.color
+                mainBackgroundColor.backgroundColor = UIColor(named: "bunnyTheme") ?? mainBackgroundColor.backgroundColor
             case .cat:
-                petImageView.image = UIImage(named: "cat")
-                hapinessLevelBar.color = UIColor(named: "catTheme")!
-                foodLevelBar.color = UIColor(named: "catTheme")!
-                mainBackgroundColor.backgroundColor = UIColor(named: "catTheme")!
+                petImageView.image = UIImage(named: "cat") ?? petImageView.image
+                hapinessLevelBar.color = UIColor(named: "catTheme") ?? hapinessLevelBar.color
+                foodLevelBar.color = UIColor(named: "catTheme") ?? foodLevelBar.color
+                mainBackgroundColor.backgroundColor = UIColor(named: "catTheme") ?? mainBackgroundColor.backgroundColor
             case .fish:
-                petImageView.image = UIImage(named: "fish")
-                hapinessLevelBar.color = UIColor(named: "fishTheme")!
-                foodLevelBar.color = UIColor(named: "fishTheme")!
-                mainBackgroundColor.backgroundColor = UIColor(named: "fishTheme")!
+                petImageView.image = UIImage(named: "fish") ?? petImageView.image
+                hapinessLevelBar.color = UIColor(named: "fishTheme") ?? hapinessLevelBar.color
+                foodLevelBar.color = UIColor(named: "fishTheme") ?? foodLevelBar.color
+                mainBackgroundColor.backgroundColor = UIColor(named: "fishTheme") ?? mainBackgroundColor.backgroundColor
             case .none:
                 print("No Button Selected")
             }
