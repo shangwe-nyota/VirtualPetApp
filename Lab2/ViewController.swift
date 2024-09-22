@@ -201,6 +201,7 @@ class ViewController: UIViewController {
     func startImageRotation(duration: CFTimeInterval = 1.0) {
         // Check if the animation is not already added
         if petImageView.layer.animation(forKey: "rotationAnimation") == nil {
+            //Rotation Animation Documentation https://stackoverflow.com/questions/31478630/animate-rotation-uiimageview-in-swift
             let rotation = CABasicAnimation(keyPath: "transform.rotation")
             rotation.fromValue = 0.0
             rotation.toValue = CGFloat.pi * 2
