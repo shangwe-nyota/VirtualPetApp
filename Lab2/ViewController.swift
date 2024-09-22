@@ -62,7 +62,7 @@ class ViewController: UIViewController {
         foodLevelTextField.borderStyle = .none;
         
         currentPet = dogSelected//Defaultpet object is initialized to dog
-        
+        playSound(fileName: "DogBark", fileExtension: "mp3") //play the dog sound on initial load
         updateDisplay()
         
         

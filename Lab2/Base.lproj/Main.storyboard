@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="landscape" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,14 +13,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lab2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BvR-et-8af" userLabel="PetBackground">
-                                <rect key="frame" x="0.0" y="0.0" width="667" height="138"/>
+                                <rect key="frame" x="0.0" y="50" width="375" height="373.33333333333331"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gB5-cC-alD">
-                                        <rect key="frame" x="283.5" y="19" width="100" height="100"/>
+                                        <rect key="frame" x="137.66666666666666" y="136.66666666666666" width="100" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="t5m-2H-bII"/>
                                             <constraint firstAttribute="width" constant="100" id="yBS-KM-rmz"/>
@@ -34,10 +34,10 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="PE6-JY-ZcK" userLabel="AnimalButtonStackView">
-                                <rect key="frame" x="32" y="334" width="603" height="30"/>
+                                <rect key="frame" x="32" y="737" width="311" height="30"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ck8-32-DS4">
-                                        <rect key="frame" x="0.0" y="0.0" width="97.5" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="39" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <state key="normal" title="Dog">
                                             <color key="titleColor" systemColor="linkColor"/>
@@ -47,7 +47,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqJ-yb-Fxy">
-                                        <rect key="frame" x="126.5" y="0.0" width="97.5" height="30"/>
+                                        <rect key="frame" x="68" y="0.0" width="39" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <state key="normal" title="Cat">
                                             <color key="titleColor" systemColor="linkColor"/>
@@ -57,7 +57,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VYN-Vh-L0J">
-                                        <rect key="frame" x="253" y="0.0" width="97" height="30"/>
+                                        <rect key="frame" x="136" y="0.0" width="39" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <state key="normal" title="Bird">
                                             <color key="titleColor" systemColor="linkColor"/>
@@ -67,7 +67,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zMq-BN-oTB">
-                                        <rect key="frame" x="379" y="0.0" width="97.5" height="30"/>
+                                        <rect key="frame" x="204" y="0.0" width="39" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <state key="normal" title="Bunny">
                                             <color key="titleColor" systemColor="linkColor"/>
@@ -77,7 +77,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G20-JW-DtA">
-                                        <rect key="frame" x="505.5" y="0.0" width="97.5" height="30"/>
+                                        <rect key="frame" x="272" y="0.0" width="39" height="30"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <state key="normal" title="Fish">
                                             <color key="titleColor" systemColor="linkColor"/>
@@ -89,20 +89,20 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jXX-0H-k1K">
-                                <rect key="frame" x="34.5" y="195" width="594.5" height="117.5"/>
+                                <rect key="frame" x="20" y="480.33333333333331" width="317" height="235.33333333333331"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MAG-O4-r7o" userLabel="HappinessStack">
-                                        <rect key="frame" x="0.0" y="0.0" width="297.5" height="117.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="317" height="117.66666666666667"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Izz-oN-wwn" userLabel="happiness bar" customClass="DisplayView" customModule="Lab2" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="62.5" width="277.5" height="31"/>
+                                                <rect key="frame" x="20" y="62.333333333333314" width="297" height="31"/>
                                                 <color key="backgroundColor" systemColor="systemGray4Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="31" id="LU4-5A-qOT"/>
                                                 </constraints>
                                             </view>
                                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Happiness: " borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="35r-yE-B4D">
-                                                <rect key="frame" x="20" y="20" width="123" height="34.5"/>
+                                                <rect key="frame" x="20" y="20.000000000000004" width="123" height="34.333333333333343"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="123" id="3xC-Ch-NPd"/>
                                                 </constraints>
@@ -110,7 +110,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Played:  0" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tFD-eb-LDg">
-                                                <rect key="frame" x="226" y="21" width="71.5" height="34.5"/>
+                                                <rect key="frame" x="226" y="21.000000000000004" width="91" height="34.333333333333343"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -130,17 +130,17 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fGv-VZ-Tz4" userLabel="FoodStack">
-                                        <rect key="frame" x="297.5" y="0.0" width="297" height="117.5"/>
+                                        <rect key="frame" x="0.0" y="117.66666666666669" width="317" height="117.66666666666669"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mfz-0i-7rq" userLabel="happiness bar" customClass="DisplayView" customModule="Lab2" customModuleProvider="target">
-                                                <rect key="frame" x="20" y="62.5" width="277" height="31"/>
+                                                <rect key="frame" x="20" y="62.333333333333371" width="297" height="31"/>
                                                 <color key="backgroundColor" systemColor="systemGray4Color"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="31" id="88A-nt-372"/>
                                                 </constraints>
                                             </view>
                                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Food Level:" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FUQ-Jd-ykE">
-                                                <rect key="frame" x="20" y="20" width="123" height="34.5"/>
+                                                <rect key="frame" x="20" y="20.000000000000004" width="123" height="34.333333333333343"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="123" id="X0P-va-vgN"/>
                                                 </constraints>
@@ -148,7 +148,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Fed: 0" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Lp-Ij-MTu">
-                                                <rect key="frame" x="226" y="21" width="71" height="34.5"/>
+                                                <rect key="frame" x="226" y="21.000000000000004" width="91" height="34.333333333333343"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -168,13 +168,13 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <variation key="heightClass=compact" axis="horizontal"/>
+                                <variation key="heightClass=compact" axis="horizontal" spacing="20"/>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="124" translatesAutoresizingMaskIntoConstraints="NO" id="kXv-mM-lbe" userLabel="Button Stack View">
-                                <rect key="frame" x="34.5" y="146" width="598" height="34.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="kXv-mM-lbe" userLabel="Button Stack View">
+                                <rect key="frame" x="34.666666666666657" y="431.33333333333331" width="305.66666666666674" height="34.333333333333314"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b3L-lK-nss">
-                                        <rect key="frame" x="0.0" y="0.0" width="237" height="34.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="137.66666666666666" height="34.333333333333336"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="Kp1-HI-JQ7"/>
                                             <constraint firstAttribute="height" constant="34.329999999999998" id="ugk-K6-NdE"/>
@@ -189,7 +189,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rTr-yZ-g0F">
-                                        <rect key="frame" x="361" y="0.0" width="237" height="34.5"/>
+                                        <rect key="frame" x="167.66666666666669" y="0.0" width="138" height="34.333333333333336"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34.329999999999998" id="Caw-GZ-Pq8"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="nuM-s6-kvz"/>
@@ -207,7 +207,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34.329999999999998" id="MrE-F8-qeQ"/>
                                 </constraints>
-                                <variation key="heightClass=compact" axis="horizontal"/>
+                                <variation key="heightClass=compact" axis="horizontal" spacing="40"/>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -220,7 +220,7 @@
                             <constraint firstItem="kXv-mM-lbe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34.666666666666657" id="6AR-sV-pXB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PE6-JY-ZcK" secondAttribute="bottom" constant="11" id="HOj-QG-RSA"/>
                             <constraint firstItem="PE6-JY-ZcK" firstAttribute="top" secondItem="jXX-0H-k1K" secondAttribute="bottom" constant="21.333333333333371" id="QPj-s2-MVE"/>
-                            <constraint firstItem="jXX-0H-k1K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34.666666666666657" id="cF5-Vj-SFh"/>
+                            <constraint firstItem="jXX-0H-k1K" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cF5-Vj-SFh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jXX-0H-k1K" secondAttribute="trailing" constant="38" id="e0h-Dy-DXU"/>
                             <constraint firstItem="jXX-0H-k1K" firstAttribute="top" secondItem="kXv-mM-lbe" secondAttribute="bottom" constant="14.666666666666686" id="eat-9r-mrO"/>
                             <constraint firstItem="BvR-et-8af" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lQY-qQ-H5l"/>
